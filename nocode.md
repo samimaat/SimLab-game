@@ -1,3 +1,13 @@
+# What's the Game about?
+
+The game is inspired by Andy Weir's Hail Mary Project where the protagonist Ryland Grace exhibits the basic instincts and curiosity of a scientist encountering new life.
+
+I wish to recreate a simulated scientific laboratory environment where you are tasked with finding out properties of unknown elements, substances and possibly life.
+
+## The Gameplay Loop
+
+Choose element ↔ choose equipment ↔ perform experiment and record properties
+
 # UI
 
 - command line
@@ -34,6 +44,3 @@
         - mass spectrometer
         - microscope
 
-**Gameplay loop**
-
-Choose element ↔ choose equipment ↔ perform experiment and record properties
