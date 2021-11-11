@@ -18,8 +18,8 @@ unknownium = {
 }
 
 
-# The dictionaries as a list.
-list_of_investigables = ["unknownium"]
+# The element dictionaries as a dictiornaries
+dict_of_elements = {"unknownium": unknownium}
 
 # Functions
 def continue_with_instrument():
@@ -28,8 +28,8 @@ def continue_with_instrument():
 
 def choose_element():
     # Add a loop for not choosing an element to study. i.e. There is no such element!
-    element = input("Choose an element to investigate: ")
-    return element
+    element_name = input("Choose an element to investigate: ")
+    return dict_of_elements.get(element_name)
 
 def heatbox(element):
     element_name = element.get("Name")
@@ -64,11 +64,11 @@ def phase(temp, element):
 
 
 print(f"Choose {thing_to_investigate} you wish to investigate from the list: ")
-print(list_of_investigables)
-# element = choose_element()
-element = unknownium
+print(list(dict_of_elements.items()))
+element = choose_element()
+# element = unknownium
 
-print("You have chosen " + element.get("Name") + " to investigate. Good luck.")
+print("You have chosen " + element.get("Name") + " to investigate. Good luck.\n")
 
 # Add the list of different instruments.
 # print("Choose an instrument from the list to use for investigation.")
