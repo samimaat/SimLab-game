@@ -64,15 +64,15 @@ def phase(temp, element):
 
 
 print(f"Choose {thing_to_investigate} you wish to investigate from the list: ")
-print(list(dict_of_elements.items()))
+print(list(dict_of_elements.keys()))
+print() # empty line, find a better to way add it
 element = choose_element()
 # element = unknownium
 
-print("You have chosen " + element.get("Name") + " to investigate. Good luck.\n")
+print("You have chosen '" + element.get("Name") + "' to investigate. Good luck.\n")
 
 # Add the list of different instruments.
 # print("Choose an instrument from the list to use for investigation.")
-
 
 
 # Choose an instrument to use.

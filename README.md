@@ -44,3 +44,12 @@ Choose element ↔ choose equipment ↔ perform experiment and record properties
         - mass spectrometer
         - microscope
 
+# Progress
+
+At the moment the game contains one unkown substance 'unknownium'. It has several properties such as 
+- melting point
+- boiling point
+- taste
+- odor
+
+The game has one instrument to work with called a heatbox. You can place the substance inside and change the temperature to see what happens to the phase of the substance.
