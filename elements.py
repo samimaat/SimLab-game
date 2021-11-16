@@ -7,7 +7,7 @@ unknownium = {
     "Boiling point": 100,
     "Taste": "Tasteless",
     "Smell": "Odorless",
-    "Transparency": "Transparent" # What if I want to change transparency at different temperatures?
+    "Color": "Red"
 }
 
 
