@@ -8,7 +8,18 @@ I wish to recreate a simulated scientific laboratory environment where you are t
 
 Choose element ↔ choose equipment ↔ perform experiment and record properties
 
-# UI
+# Progress
+
+At the moment the game contains one unkown substance 'unknownium'. It has several properties such as 
+- melting point
+- boiling point
+- 'appearance' as in what color it is in pure white light
+
+The game has following instruments:
+- Heatbox: You can place the substance inside and change the temperature to see what happens to the phase of the substance.
+- Lightbox: You can place the substance inside and change the color of the light inside the box and figure out the color of the substance.
+
+# UI elements
 
 - command line
 - choose which element or biological thing to study
@@ -44,12 +55,3 @@ Choose element ↔ choose equipment ↔ perform experiment and record properties
         - mass spectrometer
         - microscope
 
-# Progress
-
-At the moment the game contains one unkown substance 'unknownium'. It has several properties such as 
-- melting point
-- boiling point
-- taste
-- odor
-
-The game has one instrument to work with called a heatbox. You can place the substance inside and change the temperature to see what happens to the phase of the substance.
