@@ -15,7 +15,7 @@ def continue_with_instrument():
 def lightbox(element):
     element_name = element.get("Name")
 
-    print(element_name.capitalize() + f" is now placed in a box. You can see inside only when you have defined a color of the light inside.\nDetermine color of {element_name}.\nYou can do so by changing the color of the light inside the box.")
+    print(element_name.capitalize() + f" is now placed in a box. You can see inside only when you have defined a color of the light inside.\nYou can do so by changing the color of the light inside the box.")
 
     cont = "y"    
     while cont == "y":
