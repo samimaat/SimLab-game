@@ -14,18 +14,14 @@ def continue_with_instrument():
     ans = input("Do you wish to continue with the same instrument? Answer yes [y] or no [n]: ")
     return ans
 
-# Function to use to cycle the instruments
-# Should be some kind of a loop that you can go into and out of.
-# You should go into this function as soon as you have chosen an element to investigate.
-# 1) The function should list all available instruments. A bit like choose_element().
 def choose_instrument(element):
     print(list(dict_of_instruments.keys()))
     while True:
         instrument = input("Choose an instrument to use: ")
-        if instrument not in dict_of_instruments:
+        if instrument.capitalize() not in dict_of_instruments: 
             print("Hey! There is no such instrument in the list. Try again.")
         else:
-            return dict_of_instruments[instrument](element) # Selects a function to use in the dictionary [...] and with the argument (...)
+            return dict_of_instruments[instrument](element) # Selects a function to use from the dictionary [...] and with the argument (...)
 
 # Main Instrument Functions
 def lightbox(element):
@@ -87,6 +83,6 @@ def phase(temp, element):
     return phase
 
 # Dictionary of functions
-# Do these have to be here?
+# Can these be moved somewhere else? They have to be called after the functions have been defined.
 dict_of_instruments = {"Heatbox": heatbox,
                        "Lightbox": lightbox}
