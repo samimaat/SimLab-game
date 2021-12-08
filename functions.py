@@ -3,8 +3,8 @@ from elements import *
 # Universal Functions
 def choose_element():
     # Add a loop for not choosing an element to study. i.e. There is no such element!
-        element_name = input("Choose an element to investigate: ")
-        return dict_of_elements[element_name]
+    element_name = input("Choose an element to investigate: ")
+    return dict_of_elements[element_name]
 
 def continue_with_instrument():
     ans = input("Do you wish to continue with the same instrument? Answer yes [y] or no [n]: ")
@@ -46,7 +46,12 @@ def heatbox(element):
 
     cont = "y"    
     while cont == "y":
-        temp = int(input("Give a temperature which to use in the box: "))
+        while True:
+            temp = int(input("Give a temperature which to use in the box: "))
+            if temp < -273.15:
+                print("Hey! That's below absolute zero. The instrument can't go that low. Try again.\n")
+            else:
+                break
 
         print(f"At temperature {temp} you can see that {element_name} is {phase(temp, element)}.\n")
         cont = continue_with_instrument()

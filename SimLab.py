@@ -23,8 +23,8 @@ print("You have chosen '" + element.get("Name") + "' to investigate. Good luck.\
 
 
 # Choose an instrument to use.
-lightbox(element)
-# heatbox(element)
+# lightbox(element)
+heatbox(element)
 
 
 ## Probably every instrument is a function.
