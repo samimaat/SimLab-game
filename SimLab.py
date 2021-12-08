@@ -5,9 +5,6 @@ from functions import *
 
 thing_to_investigate = "A THING"
 
-# List of instruments
-# ... make it
-
 ### START OF UI AND GAME
 
 print(f"Choose {thing_to_investigate} you wish to investigate from the list: ")
@@ -18,13 +15,10 @@ element = choose_element()
 
 print("You have chosen '" + element.get("Name") + "' to investigate. Good luck.\n")
 
-# Add the list of different instruments.
-# print("Choose an instrument from the list to use for investigation.")
+# Shows a list of instruments that you can choose from.
+choose_instrument(element)
 
 
 # Choose an instrument to use.
 # lightbox(element)
-heatbox(element)
-
-
-## Probably every instrument is a function.
+# heatbox(element)
