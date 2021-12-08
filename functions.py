@@ -3,8 +3,12 @@ from elements import *
 # Universal Functions
 def choose_element():
     # Add a loop for not choosing an element to study. i.e. There is no such element!
-    element_name = input("Choose an element to investigate: ")
-    return dict_of_elements[element_name]
+    while True:
+        element_name = input("Choose an element to investigate: ")
+        if element_name not in dict_of_elements:
+            print("Hey! There is no such element in the list. Try again.\n")
+        else:
+            return dict_of_elements[element_name]
 
 def continue_with_instrument():
     ans = input("Do you wish to continue with the same instrument? Answer yes [y] or no [n]: ")
@@ -28,7 +32,6 @@ def lightbox(element):
 def appearance(color, element):
     # Add functionality to have combined colors. Should be complicated enough.
     ## For example what would I have to do to make the object look white? Or to have black as an option?
-    element_name = element["Name"]
     element_color = element["Color"]
 
     if color.lower() == element_color.lower():
