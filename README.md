@@ -16,8 +16,8 @@ At the moment the game contains one unkown substance 'unknownium'. It has severa
 - 'appearance' as in what color it is in pure white light
 
 The game has following instruments:
-- Heatbox: You can place the substance inside and change the temperature to see what happens to the phase of the substance.
-- Lightbox: You can place the substance inside and change the color of the light inside the box and figure out the color of the substance.
+- Heatbox: You can place the substance inside and change **the temperature** to see what happens to the phase of the substance.
+- Lightbox: You can place the substance inside and change **the color of the light** inside the box and figure out the color of the substance.
 
 # UI elements
 

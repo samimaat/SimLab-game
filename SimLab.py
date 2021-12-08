@@ -10,7 +10,6 @@ thing_to_investigate = "A THING"
 
 ### START OF UI AND GAME
 
-
 print(f"Choose {thing_to_investigate} you wish to investigate from the list: ")
 print(list(dict_of_elements.keys()))
 print() # empty line, find a better to way add it
