@@ -11,7 +11,10 @@ def choose_element():
             return dict_of_elements[element_name]
 
 def continue_with_instrument():
-    ans = input("Do you wish to continue with the same instrument? Answer yes [y] or no [n]: ")
+    
+    ans = ""
+    while ans != "y" and ans != "n":
+        ans = input("Do you wish to continue with the same instrument? Answer yes [y] or no [n]: ")
     return ans
 
 def choose_instrument(element):
@@ -35,6 +38,10 @@ def lightbox(element):
 
         print(f"With the {color} light you can see that {element_name} is {appearance(color, element)}.\n")
         cont = continue_with_instrument()
+    
+    if cont == "n":
+        choose_instrument(element)
+        print("\n")
 
 # Subfunction for Lightbox
 def appearance(color, element):
@@ -66,6 +73,10 @@ def heatbox(element):
 
         print(f"At temperature {temp} you can see that {element_name} is {phase(temp, element)}.\n")
         cont = continue_with_instrument()
+    
+    if cont == "n":
+        choose_instrument(element)
+        print("\n")
         
 # Subfunction for Heatbox
 def phase(temp, element):
