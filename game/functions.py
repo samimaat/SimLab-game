@@ -30,7 +30,7 @@ def choose_instrument(element):
 def lightbox(element):
     element_name = element["Name"]
 
-    print(element_name.capitalize() + f" is now placed in a box. You can see inside only when you have defined a color of the light inside.\nYou can do so by changing the color of the light inside the box.")
+    print(element_name.capitalize() + f" is now placed in a box. You can see inside only when you have defined a color of the light inside.\nYou can do so by changing the color of the light inside the box.\n")
 
     cont = "y"    
     while cont == "y":
@@ -60,7 +60,7 @@ def appearance(color, element):
 def heatbox(element):
     element_name = element["Name"]
 
-    print(element_name.capitalize() + f" is now placed in a box. You can see inside and you can change the temperature of the box.\nDetermine the melting point and the boiling point of {element_name}.\nYou can do so by changing the temperature inside the box.")
+    print(element_name.capitalize() + f" is now placed in a box. You can see inside and you can change the temperature of the box.\nDetermine the melting point and the boiling point of {element_name}.\nYou can do so by changing the temperature inside the box.\n")
 
     cont = "y"    
     while cont == "y":
