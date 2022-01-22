@@ -71,7 +71,7 @@ def heatbox(element):
             else:
                 break
 
-        print(f"At temperature {temp} you can see that {element_name} is {phase(temp, element)}.\n")
+        print(f"\nAt temperature {temp} you can see that {element_name} is {phase(temp, element)}.\n")
         cont = continue_with_instrument()
     
     if cont == "n":

@@ -11,5 +11,5 @@ unknownium = {
 }
 
 
-# The element dictionaries as a dictiornaries
+# The element dictionaries as a dictionaries
 dict_of_elements = {"unknownium": unknownium}
