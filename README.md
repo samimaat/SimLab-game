@@ -6,20 +6,25 @@ I wish to recreate a simulated scientific laboratory environment where you are t
 
 ## The Gameplay Loop
 
-Choose element ↔ choose equipment ↔ perform experiment and record properties
+You choose an instrument to investigate your chosen element.
 
 # Progress
 
-At the moment the game contains one unknown substance 'unknownium'. It has several properties such as 
+The contains one unknown substance 'unknownium'. It has several properties such as 
 - melting point
 - boiling point
-- 'appearance' as in what color it is in pure white light
+- 'appearance' as in what color it appears to be in set lighting
 
 You can cycle between different instruments.
 
 The game has following instruments:
 - Heatbox: You can place the substance inside and change **the temperature** to see what happens to the phase of the substance.
 - Lightbox: You can place the substance inside and change **the color of the light** inside the box and figure out the color of the substance.
+
+# How to play the game
+
+1. Download the 'game' folder and execute the SimLab.py. The game is played on the command line.
+2. To exit the game either close the command line or use the keyboard interrupt Ctrl + C.
 
 # UI elements
 
